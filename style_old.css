@@ -149,7 +149,6 @@ main {
     font-size: 1.1rem;
 }
 
-/* --- MODIFIED: Corrected Background Image Implementation --- */
 .hero-section {
     height: calc(100vh - 60px);
     display: flex;
@@ -159,31 +158,24 @@ main {
     overflow: hidden;
     padding: 0 20px;
 
-    /* Set the background image */
-    background-image: url('assets/images/hero-background.jpeg');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    /* --- MODIFIED: Background Image with Gradient Overlay for Opacity --- */
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.7), /* White overlay, adjust 0.7 for more/less visibility */
+            rgba(255, 255, 255, 0.7)  /* Ensures consistent overlay */
+        ),
+        url('assets/images/hero-background.jpeg') no-repeat center top / cover;
+    /* Blend mode can make it more subtle, experiment if needed */
+    /* background-blend-mode: luminosity; */
 }
 
-/* This pseudo-element now acts as a proper overlay */
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* This creates a semi-transparent white layer on top of the image */
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust 0.85 to make image more/less visible */
-    z-index: 1; /* Sits between the background image and the text content */
-}
+/* --- REMOVED the .hero-section::before pseudo-element entirely --- */
+
 
 .hero-content {
     max-width: 800px;
     padding: 20px 0;
     position: relative;
-    z-index: 2; /* Sits on top of the overlay */
+    z-index: 1;
     text-align: center;
     background: transparent;
 }
