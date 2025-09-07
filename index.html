@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU Trust - A Public Charitable Trust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-gradient">MCU</span>
+                <span class="logo-solid">Trust</span>
+              </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#help">Get Help</a></li>
+                <li><a href="#donate" class="donate-button">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Building a Healthier, Educated, and Empowered Society.</h1>
+                <p>A public charitable trust dedicated to social welfare, education, and medical relief for all, irrespective of caste, creed, or religion.</p>
+                <div class="hero-buttons">
+                    <a href="#help" class="cta-button primary">I Need Help</a>
+                    <a href="#donate" class="cta-button secondary">Support Our Mission</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="focus-section">
+            <h2 class="section-title">Our Core Focus</h2>
+            <div class="focus-grid">
+                <div class="focus-card animate-on-scroll">
+                    <img src="assets/images/education_core.png" alt="Education Icon">
+                    <h3>Education & Child Welfare</h3>
+                    <p>Providing free education, accommodation, and essentials to orphans and helpless children.</p>
+                </div>
+                <div class="focus-card animate-on-scroll">
+                    <img src="assets/images/medical.png" alt="Medical Icon">
+                    <h3>Medical & Relief</h3>
+                    <p>Establishing hospitals, running medical camps, and providing aid during natural calamities.</p>
+                </div>
+                <div class="focus-card animate-on-scroll">
+                    <img src="assets/images/helping-hand.png" alt="Community Icon">
+                    <h3>Women & Community Upliftment</h3>
+                    <p>Empowering women through self-help groups, skill training, and promoting health awareness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">The Guiding Council</h2>
+            <p class="section-subtitle">Our board of trustees is committed to upholding the vision of our founder through dedicated and transparent governance.</p>
+            <div class="trustee-grid">
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/shivan.jpg" alt="Chairman Avatar" class="trustee-avatar">
+                    <h3>Mani. M</h3>
+                    <h4>Chairman of the Trust</h4>
+                    <p><strong>Responsibilities:</strong> Provides the guiding vision, presides over board meetings, and acts as the legal and public representative of the trust.</p>
+                </div>
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/vinayar.jpg" alt="Secretary Avatar" class="trustee-avatar">
+                    <h3>[Name of Trustee No. 1]</h3>
+                    <h4>Secretary Cum Trustee</h4>
+                    <p><strong>Responsibilities:</strong> Manages the day-to-day operations, coordinates board meetings, and handles all official correspondence.</p>
+                </div>
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/balaji.jpeg" alt="Treasurer Avatar" class="trustee-avatar">
+                    <h3>[Name of Trustee No. 2]</h3>
+                    <h4>Treasurer Cum Trustee</h4>
+                    <p><strong>Responsibilities:</strong> Oversees all financial matters, manages donations and expenses, and ensures regulatory compliance.</p>
+                </div>
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/murugar.jpg" alt="Program Director Avatar" class="trustee-avatar">
+                    <h3>[Name of Program Director]</h3>
+                    <h4>Program Director</h4>
+                    <p><strong>Responsibilities:</strong> Manages the execution of all charitable programs, including educational , medical [cite: 60], and women and child care initiatives[cite: 121, 122].</p>
+                </div>
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/kubera.jpg" alt="Fundraising Head Avatar" class="trustee-avatar">
+                    <h3>[Name of Fundraising Head]</h3>
+                    <h4>Head of Fundraising</h4>
+                    <p><strong>Responsibilities:</strong> Secures the financial resources for the trust by raising funds from government bodies, institutions , and foreign contributors.</p>
+                </div>
+                <div class="trustee-card animate-on-scroll">
+                    <img src="assets/images/hanuman.jpg" alt="Outreach Coordinator Avatar" class="trustee-avatar">
+                    <h3>[Name of Outreach Coordinator]</h3>
+                    <h4>Community Outreach Coordinator</h4>
+                    <p><strong>Responsibilities:</strong> Connects with communities to identify needs , organizes awareness programs , and liaises with partner NGOs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="help" class="help-section">
+            <div class="help-content">
+                <h2 class="section-title">We are here to help.</h2>
+                <p>Please fill out the form below with as much detail as possible. All your information will be kept confidential. Our team will review your request and get in touch with you shortly.</p>
+                <form action="https://formspree.io/f/YOUR_UNIQUE_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="tel" name="contact_number" placeholder="Contact Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="location" placeholder="City / Town" required>
+                    <select name="type_of_help" required>
+                        <option value="" disabled selected>Select Type of Help Needed</option>
+                        <option value="Medical Aid">Medical Aid</option>
+                        <option value="Educational Support">Educational Support</option>
+                        <option value="Food & Shelter">Food & Shelter</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <textarea name="description" placeholder="Please describe your situation and the help you need..." rows="5" required></textarea>
+                    <button type="submit" class="cta-button primary">Submit Request</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="donate" class="donate-section">
+            <h2 class="section-title">Your Support Creates Change.</h2>
+            <p class="section-subtitle">Every contribution helps us provide education, medical care, and hope. 100% of your donation goes directly towards our charitable activities.</p>
+            <div class="donate-box animate-on-scroll">
+                <h3>Donate via UPI</h3>
+                <p>Scan the QR code below with any UPI app (Google Pay, PhonePe, Paytm, etc.) to make a donation.</p>
+                <img src="assets/images/qr.JPG" alt="UPI QR Code for Donations" class="qr-code">
+                <p><strong>Or use UPI ID:</strong>k.m.27@superyes</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MCU Trust. A Registered Public Charitable Trust.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
